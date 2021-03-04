@@ -42,7 +42,6 @@ int main(void)
 
     for (int packet_pos=header_len; packet_pos < packet_size; packet_pos+=data_width)
     {
-      int reading;
       int raw_angle, distance, number3;
       
       const float start_angle = -180;

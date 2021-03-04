@@ -1,3 +1,5 @@
+/** Read data from an OLEI lidar */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -50,10 +52,13 @@ int main(void)
       distance = (buffer[packet_pos+3]<<8) + (buffer[packet_pos+2]);
       number3 = (buffer[packet_pos+5]<<8) + (buffer[packet_pos+4]);
 
+      const int start_range =- 135;
+      const int end_range = -start_range;
+
       angle = start_angle + (float)raw_angle/100;
-      if (angle == -135)
+      if (angle == start_range)
         printf("\n| Angle | Distance |\n");
-      if (angle >= -135 && angle <= 135)
+      if (angle >= start_range && angle <= end_range)
         printf("%.2f %d\n", angle, distance);
     }
   }

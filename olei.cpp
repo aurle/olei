@@ -58,7 +58,7 @@ int main(void)
       if (angle == start_range)
         printf("\n| Angle | Distance |\n");
       if (angle >= start_range && angle <= end_range)
-        printf("%.2f %d\n", angle, distance);
+        printf(" %7.2f %6d\n", angle, distance);
     }
   }
 }

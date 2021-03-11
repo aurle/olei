@@ -8,8 +8,6 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
-#include <iostream>
-#include <sstream>
 
 #define MAX_SIZE 1240
 #define PORT 2368

@@ -1,5 +1,4 @@
-<img src="images/display.png">
----
+![](images/display.png)
 # From OLEI Documentation
 | Offset | Length | Description |  
 |--------|--------|-------------|

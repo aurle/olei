@@ -1,3 +1,7 @@
+# Read Data from an OLEI Lidar
+This reads data from an OLEI Lidar and displays it in the terminal
+
+## Example Output
 ![](images/display.png)
 # From OLEI Documentation
 | Offset | Length | Description |  

@@ -19,6 +19,7 @@ class Olei {
     static const int header_len = 40;
     static const int data_width = 8;
     static const int port = 2368;
+    static const int max_reading = 25000;
     int packet_len;
     int sock_fd;
     uint8_t buffer[1240];

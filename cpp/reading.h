@@ -23,7 +23,7 @@ class Reading
     {
       angle = distance = quality = 0;
     };
-    int set(int angle_in, int distance_in);
+    int calc_xy();
 
 private:
     void calc_angle() {

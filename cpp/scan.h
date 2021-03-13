@@ -12,4 +12,5 @@ class Scan {
         Scan();
 
         int print();
+        int plot();
 };

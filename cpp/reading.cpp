@@ -1,8 +1,7 @@
 #include "reading.h"
+#include <stdio.h>
 
-int Reading::set(int angle_in, int distance_in) {
-    angle = angle_in;
-    distance = distance_in;
-    point.set(distance * cos(raw_angle/100), distance * sin(raw_angle/100));
+int Reading::calc_xy() {
+    point.set(distance * sin((angle)*(M_PI/180)), distance * cos((angle)*(M_PI/180)));
     return 1;
 }

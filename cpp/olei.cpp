@@ -47,6 +47,7 @@ int Olei::read_scan() {
 
       if (started && reading.angle >= scan.start && reading.angle <= scan.end)
       {
+        reading.calc_xy();
         scan.readings.push_back(reading);
         if (reading.angle == scan.end)
           finished = 1;

@@ -10,6 +10,7 @@ int main(void)
     while (1)
     {
         olei.read_scan();
-        olei.scan.print();
+        //olei.scan.print(); //Enable this to see the actual readings
+        olei.scan.plot(); //Enable this to see a graphical view of the lidar
     }
 }

@@ -1,5 +1,6 @@
 # Read Data from an OLEI Lidar
 This reads data from an OLEI Lidar and displays it in the terminal
+[video of it in operation](https://photos.app.goo.gl/WzyDMTjNyhSo2uLB8)
 
 ## Example Output
 ![](images/display.png)
